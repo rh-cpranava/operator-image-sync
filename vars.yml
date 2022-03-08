@@ -1,0 +1,15 @@
+---
+credentials_file_path: /root/ansible-script/pull-secret-mirror.txt
+ocp_version: 4.9
+src_registry_name: node-0.rheltest.lab.pnq2.cee.redhat.com:5000 
+dest_registry_name: node-1.rheltest.lab.pnq2.cee.redhat.com:5000
+src_namespace:
+    - 'olm'
+    - 'ocp'
+dest_namespace: 'ocp-output'
+index_image: registry.redhat.io/redhat/redhat-operator-index
+var_prune: openshift-pipelines-operator-rh 
+src_registry_username: register-adm
+src_registry_password: redhat
+dest_registry_username: register-adm
+dest_registry_password: redhat
